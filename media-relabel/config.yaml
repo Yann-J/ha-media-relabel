@@ -1,6 +1,6 @@
 # Media Relabel add-on for Home Assistant OS
 name: Media Relabel
-version: "1.0.1"
+version: "1.0.2"
 slug: media-relabel
 description: One-shot tool - relabels a disk partition and can run arbitrary prep commands
 arch:
@@ -9,6 +9,10 @@ startup: once
 boot: manual
 init: false
 full_access: true
+devices:
+  - /dev/sdb1
+  - /dev/sdb
+  - /dev/nvme0n1
 build:
   dockerfile: Dockerfile
 hassio_api: false
