@@ -1,5 +1,6 @@
 #!/bin/bash
 set -x
+mkdir -p /mnt/old
 mount -o ro /dev/sdb1 /mnt/old || exit 1
 ls -la /mnt/old
 du -sh /mnt/old/* 2>/dev/null
