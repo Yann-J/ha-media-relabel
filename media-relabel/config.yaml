@@ -9,6 +9,8 @@ startup: once
 boot: manual
 init: false
 full_access: true
+build:
+  dockerfile: Dockerfile
 hassio_api: false
 host_network: false
 map:
